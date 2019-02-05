@@ -37,6 +37,53 @@ const siteContent = {
   },
 };
 
+
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let nav = document.querySelectorAll('a');
+   nav[0].textContent = siteContent["nav"]["nav-item-1"];
+   nav[1].textContent = siteContent["nav"]["nav-item-2"];
+   nav[2].textContent = siteContent["nav"]["nav-item-3"];
+   nav[3].textContent = siteContent["nav"]["nav-item-4"];
+   nav[4].textContent = siteContent["nav"]["nav-item-5"];
+   nav[5].textContent = siteContent["nav"]["nav-item-6"];
+
+let header1 =  document.querySelector('h1');
+  header1.textContent = siteContent["cta"]["h1"];
+
+  let btn =  document.querySelector('button');
+  btn.textContent = siteContent["cta"]["button"];
+  // use class if you are doing more than one button
+
+let ctaimg = document.querySelector("#cta-img"); //getElementById also
+ctaimg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let header4 =  document.querySelectorAll('h4');
+    header4[0].textContent = siteContent["main-content"]["features-h4"];
+    header4[1].textContent = siteContent["main-content"]["about-h4"];
+    header4[2].textContent = siteContent["main-content"]["services-h4"];
+    header4[3].textContent = siteContent["main-content"]["product-h4"];
+    header4[4].textContent = siteContent["main-content"]["vision-h4"];
+    header4[5].textContent = siteContent["contact"]["contact-h4"];
+
+
+let middleimg = document.getElementById("middle-img"); 
+  middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+  let para =  document.querySelectorAll('p');
+  para[0].textContent = siteContent["main-content"]["features-content"];
+  para[1].textContent = siteContent["main-content"]["about-content"];
+  para[2].textContent = siteContent["main-content"]["services-content"];
+  para[3].textContent = siteContent["main-content"]["product-content"];
+  para[4].textContent = siteContent["main-content"]["vision-content"];
+  para[5].textContent = siteContent["contact"]["address"];
+  para[6].textContent = siteContent["contact"]["phone"];
+  para[7].textContent = siteContent["contact"]["email"];
+  para[8].textContent = siteContent["footer"]["copyright"];
+
+
+  
